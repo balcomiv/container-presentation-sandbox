@@ -2,23 +2,18 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { User } from 'src/app/interfaces/user';
 
 @Component({
-  selector: 'app-presentation-three',
+  selector: 'app-presentation-four',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <!-- Main -->
     <ng-container *ngIf="user; else loading">
       <fieldset class="presentation">
-        <legend>Presentation Three</legend>
+        <legend>Presentation Four</legend>
         <h5 *ngIf="user.showHelloMsg">
           Hello! {{ user.firstName }} {{ user.lastName }}
         </h5>
 
         <pre *ngIf="user.showJson">{{ user | json }}</pre>
-
-        <ng-container *ngIf="showContainer">
-          <br />
-          <app-container-two></app-container-two>
-        </ng-container>
       </fieldset>
     </ng-container>
 
@@ -27,8 +22,6 @@ import { User } from 'src/app/interfaces/user';
   `,
   styles: [],
 })
-export class PresentationThreeComponent {
+export class PresentationFourComponent {
   @Input() user: User | null = null;
-
-  showContainer = true;
 }

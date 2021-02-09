@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContainerOneComponent } from './components/containers/container-one.component';
 import { ContainerTwoComponent } from './components/containers/container-two.component';
+import { PresentationFourComponent } from './components/presentation/presentation-four.component';
 import { PresentationOneComponent } from './components/presentation/presentation-one.component';
 import { PresentationThreeComponent } from './components/presentation/presentation-three.component';
 import { PresentationTwoComponent } from './components/presentation/presentation-two.component';
@@ -16,6 +17,7 @@ import { PresentationTwoComponent } from './components/presentation/presentation
     PresentationOneComponent,
     PresentationTwoComponent,
     PresentationThreeComponent,
+    PresentationFourComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

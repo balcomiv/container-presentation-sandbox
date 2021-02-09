@@ -3,8 +3,10 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { User } from '../interfaces/user';
 
 const ANONYMOUS_USER: User = {
-  firstName: '',
-  lastName: '',
+  firstName: 'Unknown',
+  lastName: 'User',
+  showHelloMsg: true,
+  showJson: false,
 };
 
 /**
