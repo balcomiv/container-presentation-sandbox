@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { User } from 'src/app/interfaces/user';
+import { NewsletterService } from 'src/app/services/newsletter.service';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -17,6 +18,7 @@ import { UserService } from 'src/app/services/user.service';
         you want to see the wrong way to have a container with 'onPush' and change detection not to fire
       -->
       <!-- <pre>{{ user | json }}</pre> -->
+      <pre>{{ newsletterService.newsLetter$ | async }}</pre>
     </fieldset>
   `,
   styles: [],
@@ -24,7 +26,10 @@ import { UserService } from 'src/app/services/user.service';
 export class ContainerTwoComponent implements OnInit {
   user: User | null = null;
 
-  constructor(public userService: UserService) {}
+  constructor(
+    public userService: UserService,
+    public newsletterService: NewsletterService
+  ) {}
 
   ngOnInit(): void {
     this.userService.user$.subscribe((user) => (this.user = user));
