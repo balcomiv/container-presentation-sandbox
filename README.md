@@ -9,3 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Automated configuration
 
 - Just run `npx typescript-strictly-typed`
+
+# StackBlitz
+
+- https://stackoverflow.com/questions/52432191/auto-import-in-visual-studio-code-only-offering-absolute-path-with-lerna-subpack
