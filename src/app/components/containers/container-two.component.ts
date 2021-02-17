@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { User } from 'src/app/interfaces/user';
-import { NewsletterService } from 'src/app/services/newsletter.service';
-import { UserService } from 'src/app/services/user.service';
+import { User } from '../../interfaces/user';
+import { NewsletterService } from '../../services/newsletter.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-container-two',

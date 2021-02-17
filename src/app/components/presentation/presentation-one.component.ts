@@ -4,7 +4,7 @@ import {
   Input,
   OnInit,
 } from '@angular/core';
-import { User } from 'src/app/interfaces/user';
+import { User } from '../../interfaces/user';
 
 @Component({
   selector: 'app-presentation-one',
